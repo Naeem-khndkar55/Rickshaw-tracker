@@ -1,7 +1,12 @@
 import React from "react";
-
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes.jsx";
 const App = () => {
-  return <div className="text-3xl font-bold underline">App</div>;
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 };
 
 export default App;
